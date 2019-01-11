@@ -1,0 +1,83 @@
+
+<html lang="en">
+  <head>
+      {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Welcome To Jain Hub</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+              <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'amrit.jpg' %}" width="30" height="30">
+                  Amrit Jain
+              </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link " href="https://twitter.com/@AmritJa1207"><img src="{% static 'twitter.png' %}" width="30" height="30" class="d-inline-block alighn-top"> Twitter <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="https://www.instagram.com/amrit._.jain/?hl=en"> <img src="{% static 'insta.jpg' %}" width="30" height="30" class="d-inline-block alighn-top">Instagram <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{% static 'resume.txt' %}"> <img src="{% static 'user.jpg' %}" width="30" height="30" class="d-inline-block alighn-top"> About Us</a>
+    </div>
+    </div>
+  </div>
+</nav>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading" style="color: #79aec8"><i>PigGame</i></h1><br/><br/>
+            <p class="lead text-muted"><i>GAME RULES:<br/>
+- The game has 2 players, playing in rounds.<br/>
+- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score.<br/>
+- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn.<br/>
+- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
+- The first player to reach 25 points on GLOBAL score wins the game</i></p><br/><br/>
+            <img src="{% static 'main.png' %}" height="200"   /><br/><br/>
+            <a class="btn btn-primary my-2" href="{% url 'play' %}">Click Here TO Play </a>
+
+        </div>
+
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+
+          </div>
+          </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p align="center">© AmritJain {% now "Y" %}</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
